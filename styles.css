@@ -44,7 +44,7 @@ nav a {
 
 /*welcome*/
 
-#welcom-section {
+#welcome-section {
     height: 100vh;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
@@ -55,7 +55,7 @@ nav a {
     flex-direction: column;
 }
 
-#welcom-section a {
+#welcome-section a {
     text-decoration: none;
     color: white;
 }
@@ -246,5 +246,13 @@ nav a {
 
 }
 
+@media only screen and (max-width : 500px) {
+    .projects-bar {
+        overflow : scroll; 
+    }
+    .prj-box {
+        width : 90%;
+    }
+}
 
 
