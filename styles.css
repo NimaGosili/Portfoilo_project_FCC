@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 100;
+}
+
+html {
+    scroll-behavior:smooth;
+
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    height: 30px;
+    position: fixed;
+    background-color: #F5EBE0;
+    width: 100%;
+    top : 0;
+    z-index: 1;
+    border-bottom: 2px solid white;
+}
+
+#navbar {
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 30vw;
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+.nav {
+    margin: 0 5px 0 5px ;
+}
+
+
+
+/*welcome*/
+
+#welcom-section {
+    height: 100vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: 20s ease-in-out infinite gr-bk;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#welcom-section a {
+    text-decoration: none;
+    color: white;
+}
+
+#title > h1 {
+    font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 100;
+    font-size: 2rem;
+    color : white;
+}
+
+#bio {
+    margin-top: 5vh;
+    max-width : 70vw ;
+    text-align: justify;
+    color : white;
+}
+
+#scrol-down {
+    position: relative;
+    top: 30vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;    
+    border-radius: 50px;
+    border : 1px solid white;
+    animation: 2s ease infinite scrol-down;
+
+}
+#scrol-down p {
+    position: relative;
+    top : -2px;
+    color: white;
+}
+
+@keyframes gr-bk {
+    0% {
+        background-position: 10% 0%;
+    }
+    50% {
+        background-position: 90% 100%;
+    }
+    100% {
+        background-position: 10% 0%;
+    }
+
+}
+@keyframes scrol-down {
+    10% {
+        transform: translatey(0vh);
+    }
+    50% {
+        transform: translatey(1vh);
+    }
+    90% {
+        transform: translatey(0vh);
+    }
+}
+
+/* works */
+
+#projects {
+    background-color: #EDEDE9;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: 100vh;
+    justify-content: space-evenly;
+}
+.P-title h1 {
+    position: relative;
+    font-weight: 100;
+    padding: 5px;
+    border-top: 2px solid #079898;
+}
+.projects-bar {
+    display: flex;
+    width: 80vw;
+    flex-wrap: wrap-reverse;
+    height : 80vh;
+    justify-content: center;
+    align-items: center;
+}
+.projects-bar a {
+    text-decoration: none;
+}
+.prj-box {
+    margin: 5px;
+    width : 38vw;
+    max-width: 300px;
+    height : 38vh;
+    background-color: #D6CCC2;
+    border : 1px solid #D6CCC2;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.prj-box.fst{
+    background-image: url(https://github.com/NimaGosili/1st_project_www.freecodecamp.org/raw/main/Screenshot.png);
+    background-size: cover;
+    background-position: 60% 50%;
+}
+.prj-box.snd{
+    background-image: url(https://github.com/NimaGosili/2nd_project_www.freecodecamp.org/raw/main/Screenshot.png);
+    background-size: cover;
+    background-position: 50% 0%;
+}
+.prj-box.trd{
+    background-image: url(https://github.com/NimaGosili/3rd_project_www.freecodecamp.org/raw/main/Screenshot1.png);
+    background-size: cover;
+    background-position: 50% 0%;
+}
+.prj-box.frd{
+    background-image: url(https://github.com/NimaGosili/4rd_project_www.freecodecamp.org/raw/main/Screenshot2.png);
+    background-size: cover;
+    background-position: 50% 0%;
+}
+
+.description {
+    
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    transform: translateY(-30px);
+}
+.description:hover{
+    opacity: 100%;
+    transform: translateY(0px);
+    
+}
+.description p {
+    color : white;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    background-color: #383838d3;
+    text-align:center;
+}
+
+/*contract*/
+
+.flex-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contract {
+    color : white;
+    height: 60vh;
+    width: 100%;
+    background-color: #8d7a6f ;
+}
+.c-top {
+    height: 40vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.c-btm {
+    height: 20vh;
+    border-top: 1px solid white;
+}
+.c-title {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 400;
+}
+#contract a {
+    text-decoration: none;
+    color: white;
+}
+.c-icons {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    width: 240px;
+}
+
+.c-icons a {
+    transition: 100ms ease-in-out ;
+
+}
+.c-icons > a:hover {
+    transform: scale(1.5) rotate(-10deg);
+
+}
+
+
+
